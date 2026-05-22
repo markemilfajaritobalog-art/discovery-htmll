@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café LATtea - Limited Offers</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+  /* minimal extra styles — clean, reduced design, no heavy animations */
+  .offers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  
+  .offer-card {
+    background: rgba(255, 248, 240, 0.95);
+    border-radius: 16px;
+    padding: 1.2rem;
+    flex: 1;
+    min-width: 240px;
+    text-align: left;
+    border: 1px solid #e5d5c4;
+  }
+  
+  .offer-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #d9c2aa;
+    display: block;
+  }
+  
+  .menu-cat {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #a5673f;
+    letter-spacing: 0.5px;
+    margin: 0.5rem 0 0.2rem;
+  }
+  
+  .offer-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3b2a22;
+    margin: 0.25rem 0;
+  }
+  
+  .offer-desc {
+    font-size: 0.85rem;
+    color: #5a4235;
+    margin: 0.4rem 0;
+    line-height: 1.3;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #c26e3a;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #e25822;
+    color: white;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    margin: 0.3rem 0;
+  }
+  
+  .tag-green {
+    background: #2c7a4a;
+  }
+  
+  .tag-gold {
+    background: #d48c2c;
+  }
+  
+  .events-box {
+    background: rgba(255, 248, 240, 0.95);
+    border-radius: 16px;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid #e5d5c4;
+  }
+  
+  .coming-soon h3 {
+    color: #a5673f;
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+  }
+  
+  .info-bar {
+    background: rgba(165, 103, 63, 0.12);
+    border-radius: 40px;
+    padding: 0.8rem;
+    margin: 1.2rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  hr {
+    margin: 0.8rem 0;
+    border: none;
+    border-top: 1px solid #e2cfbc;
+  }
+  
+  /* keep original button style intact */
+  .btn {
+    background: #a5673f;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.1s linear;
+  }
+  
+  .btn:hover {
+    background: #8b5332;
+  }
+  
+  .hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR (unchanged, exactly as original) -->
+<div class="navbar">
+  <div class="logo">☕ Café LATtea</div>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- HERO + DISCOVER MORE SECTION -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Discover More at Café LATtea</h1>
+    <p>Limited menu offers • Coffee • Tea • Pastries</p>
+
+    <!-- LIMITED OFFERS GRID — each uses <img> placeholder (replace src with your own images) -->
+    <div class="offers-grid">
+      
+      <!-- OFFER 1: Coffee (Latte) -->
+      <div class="offer-card">
+        <img class="offer-img" src="https://placehold.co/400x200/e8d5bc/8b5a3a?text=Hazelnut+Caramel+Latte" alt="Hazelnut Caramel Latte">
+        <div class="menu-cat">☕ FROM OUR COFFEE MENU</div>
+        <div class="offer-title">Hazelnut Caramel Latte</div>
+        <div class="offer-desc">Classic Latte + roasted hazelnut & caramel drizzle. Limited autumn edition.</div>
+        <div class="price">₱140 <span style="font-size:0.75rem; text-decoration:line-through;">₱25</span></div>
+        <span class="tag">🌿 LIMITED TIME</span>
+      </div>
+      
+      <!-- OFFER 2: Tea (Green Tea) -->
+      <div class="offer-card">
+        <img class="offer-img" src="https://placehold.co/400x200/d4e2c6/5a7240?text=Honey+Citrus+Frost" alt="Honey Citrus Frost Iced Tea">
+        <div class="menu-cat">🍃 FROM OUR TEA MENU</div>
+        <div class="offer-title">Honey Citrus Frost</div>
+        <div class="offer-desc">Iced Green Tea with lemon, wild honey & sparkling finish.</div>
+        <div class="price">₱110 <span style="font-size:0.75rem; text-decoration:line-through;">₱15</span></div>
+        <span class="tag tag-green">🍯 SEASONAL</span>
+      </div>
+      
+      <!-- OFFER 3: Pastries (Croissant + Coffee combo) -->
+      <div class="offer-card">
+        <img class="offer-img" src="https://placehold.co/400x200/e0bc8c/a5612a?text=Croissant+%26+Coffee+Duo" alt="Croissant and Coffee Duo">
+        <div class="menu-cat">🥐 FROM OUR PASTRIES MENU</div>
+        <div class="offer-title">Morning Duo Deal</div>
+        <div class="offer-desc">Any croissant (butter/choc/almond) + any small coffee (Latte/Cappuccino/Espresso).</div>
+        <div class="price">₱130 | save ₱25</div>
+        <span class="tag tag-gold">⏰ 8AM–11AM</span>
+      </div>
+    </div>
+    
+    <!-- Second row: extra offers connecting to Cappuccino, Milk Tea, Cakes -->
+    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 0.5rem 0 1rem;">
+      
+      <div style="background: rgba(255,245,235,0.9); border-radius: 16px; padding: 1rem; flex: 1; min-width: 230px; border:1px solid #e5d5c4;">
+        <img src="https://placehold.co/400x160/cbb28b/6f4a2a?text=Dirty+Chai+Latte" style="width:100%; height:120px; object-fit:cover; border-radius:12px; margin-bottom:8px;" alt="Dirty Chai Latte">
+        <div class="menu-cat">☕ COFFEE + TEA</div>
+        <p style="font-weight: bold; margin: 0.3rem 0;">Dirty Chai Latte</p>
+        <p style="font-size: 0.85rem;">Espresso + spiced Milk Tea + steamed milk.</p>
+        <p><strong>₱150</strong> <span style="background:#ffd966; border-radius: 20px; padding: 0 8px; font-size:0.7rem;">Holiday special</span></p>
+      </div>
+      
+      <div style="background: rgba(255,245,235,0.9); border-radius: 16px; padding: 1rem; flex: 1; min-width: 230px; border:1px solid #e5d5c4;">
+        <img src="https://placehold.co/400x160/e2b88a/a5582c?text=Cookie+%26+Cake+Sampler" style="width:100%; height:120px; object-fit:cover; border-radius:12px; margin-bottom:8px;" alt="Cookie and Cake Sampler">
+        <div class="menu-cat">🍰 PASTRY LOVERS</div>
+        <p style="font-weight: bold; margin: 0.3rem 0;">Cookie & Cake Sampler</p>
+        <p style="font-size: 0.85rem;">Any 2 cookies + 1 slice of cake (vanilla/chocolate).</p>
+        <p><strong>₱120</strong> <span style="background:#ffd966; border-radius: 20px; padding: 0 8px; font-size:0.7rem;">Limited stock</span></p>
+      </div>
+    </div>
+
+    <!-- EVENTS SECTION : "Coming soon" (clean, low design) -->
+    <div class="events-box">
+      <h2 style="font-size:1.4rem; margin-bottom:0.3rem;">📅 Upcoming Events</h2>
+      <div class="coming-soon">
+        <h3>✨ Coming Soon!</h3>
+        <p style="font-size:0.9rem;">Live music • Coffee workshops • Tea tastings</p>
+        <p style="font-size:0.85rem; margin-top:0.3rem;">Follow us for announcements</p>
+      </div>
+      <hr>
+    </div>
+
+    <!-- ONLY BUTTON: BACK TO HOME (index.html) -->
+    <button class="btn" onclick="window.location.href='index.html';">← Back to Home</button>
+  </div>
+</div>
+
+</body>
+</html>
